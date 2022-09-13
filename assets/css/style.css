@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "fraunces";
+  src: url(/assets/font/Fraunces_Bold.ttf) format("ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(/assets/font/Poppins_Regular.ttf) format("ttf");
+  font-display: swap;
+}
+html {
+  font-size: 16px;
+}
+html h1 {
+  font-size: 4rem;
+  font-family: "fraunces";
+}
+@media screen and (max-width: 768px) {
+  html h1 {
+    font-size: 3rem;
+  }
+}
+html h2 {
+  font-size: 2rem;
+}
+@media screen and (max-width: 425px) {
+  html h2 {
+    font-size: 1.5rem;
+  }
+}
+html h3 {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  html h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  html h3 {
+    font-size: 1.5rem;
+  }
+}
+html h4 {
+  font-size: 2rem;
+}
+html p {
+  font-size: 2rem;
+  font-family: "poppins";
+}
+@media screen and (max-width: 768px) {
+  html p {
+    font-size: 1.2rem;
+  }
+}
+html label {
+  font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  html label {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  html label {
+    font-size: 1.5rem;
+  }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+#error-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.wrapper_txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+  z-index: 9999;
+  animation: translateText 4s ease-in-out;
+  animation-iteration-count: infinite;
+}
+.wrapper_txt #drag-txt {
+  font-size: 1rem;
+}
+.wrapper_txt #drag-txt span {
+  font-style: italic;
+}
+
+@keyframes translateText {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.content__drag-area {
+  height: 100vh;
+  width: 100vw;
+  color: aquamarine;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-drag {
+  position: relative;
+  background-color: white;
+  width: 16vw;
+  height: 20vw;
+  min-height: 150px;
+  min-width: 120px;
+  max-height: 750px;
+  max-width: 600px;
+  margin: 4rem;
+  cursor: grab;
+  /* will-change: transform; */
+}
+
+/*# sourceMappingURL=style.css.map */
