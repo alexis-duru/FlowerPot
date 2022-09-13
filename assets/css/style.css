@@ -390,12 +390,12 @@ html label {
   font-family: 0.8rem;
   margin-bottom: 20px;
   display: flex;
-  width: 500px;
+  width: auto;
   height: 100px;
   justify-content: space-between;
   transition: 0.1s ease-in-out;
 }
-.fullPageMenu .nav ul li:hover span {
+.fullPageMenu .nav ul li:hover img {
   display: block;
   transform: scale(1);
 }
@@ -405,14 +405,13 @@ html label {
   color: #00372E;
   letter-spacing: 10px;
 }
-.fullPageMenu .nav ul li span {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #00372E;
+.fullPageMenu .nav ul li img {
+  width: 40px;
+  height: 40px;
   transform: scale(0);
   transition: 0.2s ease-in-out;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 .fullPageMenu .img-wrapper {
   overflow: hidden;

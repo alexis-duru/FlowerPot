@@ -184,12 +184,12 @@
                 font-family: 0.8rem;
                 margin-bottom: 20px;
                 display: flex;
-                width: 500px;
+                width: auto;
                 height: 100px;
     justify-content: space-between;
     transition: 0.1s ease-in-out;
                 &:hover {
-                    span {
+                    img {
                         display: block;
                         transform: scale(1);
                     }
@@ -200,14 +200,15 @@
                     color: $green;
                     letter-spacing: 10px;
                 }
-                span {
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 50%;
-                    background-color: $green;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    // border-radius: 50%;
+                    // background-color: $green;
                     transform: scale(0);
                     transition: 0.2s ease-in-out;
-                    margin-top: 20px;
+                    margin-top: 10px;
+                    margin-left: 20px;
                 }
             }
         } 
