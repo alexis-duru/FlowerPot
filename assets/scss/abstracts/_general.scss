@@ -1,0 +1,62 @@
+::selection {
+    color:  $green;
+    background: $black;
+}
+.wrapper-column {
+    display: flex;
+    max-width: 134rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4rem;
+    flex-direction: column;
+}
+.wrapper-row {
+    display: flex;
+    align-items: center;
+    max-width: 134rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4rem;
+    flex-direction: row;
+}
+.wrapper-row + .wrapper-row {
+    padding-top: 12rem;
+}
+.strong-green{
+    color: $green;
+}
+.primary-btn {
+    background-color: $green;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: $title;
+    --bs-btn-padding-x: 1.75rem;
+    --bs-btn-padding-y: .6rem;
+    margin-top: 2rem;
+
+    &:hover {
+        background-color: $black !important;
+        color: #fff !important;
+    }
+}
+.secondary-btn {
+    background-color: $green;
+    border-radius: 0;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: $title;
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-padding-y: .6rem;
+    &:hover {
+        background-color: $black !important;
+        color: #fff !important;
+    }
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
