@@ -1,0 +1,100 @@
+/*About*/
+.about,
+.contact__banner, .products {
+    padding: 70px 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about__company-content {
+    width: 50%;
+    margin-right: 6rem;
+
+    & h2 {
+        font-family: $title;
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.about__company-img,
+.about__product-img {
+    width: 50%;
+}
+
+.about__product-content {
+    width: 50%;
+    margin-left: 6rem;
+
+    & h2 {
+        font-family: $title;
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.about__company-img {
+    width: 50%;
+}
+
+/*Contact banner*/
+.contact__banner {
+    & .banner {
+        height: 20rem;
+        width: 100%;
+        background-color: #F8F8F8;
+        background-image: url(../images/flowerpot-contact-banner.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        padding: 0 3rem;
+        text-align: center;
+    }
+}
+/*Homeage products*/
+.products .btn-container {
+    margin-top: 4rem;
+}
+.products__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    column-gap: 2rem;
+    row-gap: 4rem;
+
+    h3, .product__price {
+        font-family: $title;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    & img{
+        width: 300px;
+        margin-bottom: .4rem;
+    }
+    
+    & .product__rank {
+        width: 90px;
+        margin-right: .4rem;
+    }
+    
+    & span{
+        font-family: $text;
+        font-size: 1.2rem;
+        color: gray;
+    }
+}
