@@ -1,3 +1,16 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
 @font-face {
   font-family: "fraunces";
   src: url(/assets/font/Fraunces_Bold.ttf) format("ttf");
@@ -12,7 +25,7 @@ html {
   font-size: 16px;
 }
 html h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: "fraunces";
 }
 @media screen and (max-width: 768px) {
@@ -45,7 +58,7 @@ html h4 {
   font-size: 2rem;
 }
 html p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "poppins";
 }
 @media screen and (max-width: 768px) {
@@ -67,17 +80,283 @@ html label {
   }
 }
 
-* {
-  padding: 0px;
-  margin: 0px;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
+.cta-discover {
+  width: 250px;
+  border: #00372E;
+  height: 40px;
+  background-color: #00372E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: 0.2s ease-in-out;
+  font-family: "poppins";
+  cursor: pointer;
+}
+.cta-discover:hover {
+  background-color: white;
+  color: #00372E;
+  border: 1px solid #00372E;
 }
 
-body {
+@keyframes translateTxt {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+#header {
   width: 100vw;
-  min-height: 100vh;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#header #header-wrapper {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  z-index: 9999999999;
+}
+#header #header-wrapper #logo-wrapper {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s ease-in-out;
+  animation: translateTxt 2s ease-in-out;
+  animation-iteration-count: linear;
+}
+#header #header-wrapper #logo-wrapper a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+#header #header-wrapper #logo-wrapper a img {
+  width: 30px;
+  height: auto;
+}
+#header #header-wrapper #logo-wrapper a p {
+  margin-bottom: 0px;
+  margin-left: 20px;
+  font-family: "fraunces";
+  border-bottom: 0px;
+  color: #00372E;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#header #header-wrapper #menu-wrapper {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: "fraunces";
+  font-size: 1.5rem;
+}
+#header #header-wrapper #menu-wrapper img {
+  height: auto;
+  width: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+  color: #00372E;
+}
+#header #header-wrapper #menu-wrapper img:hover {
+  opacity: 0.8;
+}
+#header #header-wrapper #menu-wrapper .menu {
+  margin-top: -3px;
+  text-decoration: none;
+  color: #00372E;
+  font-weight: 400;
+  cursor: pointer;
+}
+#header #header-wrapper #menu-wrapper .menu:hover {
+  opacity: 0.8;
+}
+
+.first-section {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../../assets/images/header/header.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-section .wrapper-content {
+  width: 80vw;
+  height: 80vh;
+}
+.first-section .wrapper-content .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.first-section .wrapper-content .content .content-infos {
+  width: 40%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.first-section .wrapper-content .content .content-infos h1 {
+  margin-bottom: 20px;
+}
+.first-section .wrapper-content .content .content-infos p {
+  margin-bottom: 50px;
+}
+.first-section .wrapper-content .content .content-socialMedia {
+  width: 50%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.first-section .wrapper-content .content .content-socialMedia .socialMedia {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  height: 20%;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.first-section .wrapper-content .content .content-socialMedia .socialMedia a {
+  margin-right: 20px;
+}
+.first-section .wrapper-content .content .content-socialMedia .socialMedia a img {
+  width: 28px;
+  height: auto;
+}
+
+.fullPageMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1;
+  transition: 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(100%);
+  z-index: 1000000;
+}
+.fullPageMenu .nav {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0 150px;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  margin-left: 300px;
+  font-family: "fraunces";
+}
+.fullPageMenu .nav ul {
+  opacity: 1;
+}
+.fullPageMenu .nav ul:hover a {
+  opacity: 0.3;
+}
+.fullPageMenu .nav ul :hover a:hover {
+  opacity: 1;
+}
+.fullPageMenu .nav ul li {
+  transition: 0.2s ease-in-out;
+  line-height: 55px;
+  text-align: justify;
+  opacity: 1;
+  font-family: 0.8rem;
+  margin-bottom: 20px;
+}
+.fullPageMenu .nav ul li a {
+  transition: 0.4s ease-in-out;
+  text-decoration: none;
+  color: #00372E;
+  letter-spacing: 10px;
+}
+.fullPageMenu img {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+}
+
+.fullPageMenu.active {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  position: fixed;
+  transform: translateY(0%);
+  z-index: 1000000;
+}
+
+.menu {
+  z-index: 9999999999;
+}
+.menu .menuicon {
+  position: fixed;
+  top: 42px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 150px;
+  transform: scale(1);
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  z-index: 1000000;
+}
+.menu .menuicon:hover {
+  transform: scale(1.1);
+}
+.menu p {
+  position: fixed;
+  top: 40px;
+  right: 70px;
+  height: 20px;
+  width: 20px;
+  transform: scale(1);
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  font-family: "fraunces";
+  font-weight: 200;
+  font-size: 20px;
+  z-index: 1000000;
+}
+.menu .menuicon.active {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 150px;
+  transform: scale(1);
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  z-index: 1000000;
+}
+.menu .menuicon.active:hover {
+  transform: scale(1.1);
+}
+.menu:hover p {
+  opacity: 1;
 }
 
 #error-page {

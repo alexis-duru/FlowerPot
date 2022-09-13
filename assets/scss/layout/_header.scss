@@ -1,0 +1,252 @@
+#header {
+    width: 100vw;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    #header-wrapper {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        z-index: 9999999999;
+        #logo-wrapper {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.1s ease-in-out;
+            animation: translateTxt 2s ease-in-out;
+            animation-iteration-count: linear;
+            a {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: flex-start;
+                text-decoration: none;
+                
+                img {
+                    width: 30px;
+                    height: auto;
+                }
+                p {
+                    margin-bottom: 0px;
+                    margin-left: 20px;
+                    font-family: $title;
+                    border-bottom: 0px;
+                    color: $green;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        #menu-wrapper {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-family: $title;
+            font-size: 1.5rem;
+            img {
+                height: auto;
+                width: 30px;
+                margin-left: 15px;
+                cursor: pointer;
+                color: $green;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+            .menu {
+                margin-top: -3px;
+                text-decoration: none;
+                color: $green;
+                font-weight: 400;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+.first-section {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../../assets/images/header/header.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .wrapper-content {
+        width: 80vw;
+        height: 80vh;
+        .content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .content-infos {
+                width: 40%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h1 {
+                    margin-bottom: 20px;
+                }
+                p {
+                    margin-bottom: 50px;
+                }
+            }
+            .content-socialMedia {
+                width: 50%;
+                height: 10%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .socialMedia {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 50%;
+                    height: 20%;
+                    align-items: flex-end;
+                    justify-content: flex-start;
+                    a {
+                        margin-right: 20px;
+                        img {
+                            width: 28px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.fullPageMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    transition: 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100%);
+    z-index: 1000000;
+    .nav {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        padding: 0 150px;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        margin-left: 300px;
+        font-family: $title;
+        ul {
+            opacity: 1;
+            &:hover a {
+            opacity: 0.3;
+            }
+            :hover a:hover {
+                opacity: 1;
+            }
+            li {
+                transition: 0.2s ease-in-out;
+                line-height: 55px;
+                text-align: justify;
+                opacity: 1;
+                font-family: 0.8rem;
+                margin-bottom: 20px;
+                a {
+                    transition: 0.4s ease-in-out;
+                    text-decoration: none;
+                    color: $green;
+                    letter-spacing: 10px;
+                }
+            }
+        } 
+    }
+    img {
+        width: 200px;
+        height: auto;
+        position: absolute;
+        top: 45%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        opacity: 0.7;
+    }
+}
+.fullPageMenu.active {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    position: fixed;
+    transform: translateY(0%);
+    z-index: 1000000;
+}
+.menu {
+    z-index: 9999999999;
+    .menuicon {
+        position: fixed;
+        top: 42px;
+        right: 20px;
+        height: 20px;
+        width: 20px;
+        background-color: black;
+        border-radius: 150px;
+        transform: scale(1);
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+        z-index: 1000000;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    p {
+        position: fixed;
+        top: 40px;
+        right: 70px;
+        height: 20px;
+        width: 20px;
+        transform: scale(1);
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+        // opacity: 0;
+        font-family: $title;
+        font-weight: 200;
+        font-size: 20px;
+        z-index: 1000000;
+    }
+    .menuicon.active {
+        height: 20px;
+        width: 20px;
+        background-color: black;
+        border-radius: 150px;
+        transform: scale(1);
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+        z-index: 1000000;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &:hover {
+        p {
+            opacity: 1;
+        }
+    }
+
+}
