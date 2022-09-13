@@ -1,3 +1,16 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
 @font-face {
   font-family: "fraunces";
   src: url(/assets/font/Fraunces_Bold.ttf) format("ttf");
@@ -67,17 +80,83 @@ html label {
   }
 }
 
-* {
-  padding: 0px;
-  margin: 0px;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
+.footer {
+  background: black;
+  justify-content: space-between;
+  align-items: end;
 }
 
-body {
-  width: 100vw;
-  min-height: 100vh;
+.user_footer {
+  display: flex;
+  align-items: center;
+  padding-block: 30px;
+}
+
+.reseaux {
+  color: #FFFFFF;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.txt {
+  font-size: 20px;
+}
+
+.users_info {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins" !important;
+}
+
+h3 {
+  color: #FFFFFF;
+  font-size: 22px !important;
+}
+
+img {
+  padding-right: 5px;
+}
+
+li {
+  font-family: "Open Sans";
+  color: #FFFFFF;
+  padding-block: 3px;
+  padding-left: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: "Fraunces" !important;
+  padding-block: 10px;
+}
+
+a {
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
+.right {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.line {
+  width: 1436.47px;
+  height: 0px;
+  left: 241.77px;
+  top: 348px;
+  border: 1px solid #FFFFFF;
+}
+
+.right_p {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding-block: 30px;
 }
 
 #error-page {
