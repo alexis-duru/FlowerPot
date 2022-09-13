@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+     <!-- BOOTSTRAP -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- AOS -->
@@ -18,6 +19,14 @@
 
 <body>
     <div class="first-section">
+        <!-- SPLASHSCREEN -->
+        <div class="intro">
+            <h1 class="logo-header">
+                <span class="logo">Flo</span><span class="logo">wer</span><span class="logo">pots</span>
+            </h1>
+        </div>
+
+        <!-- HEADER -->
         <div id="header">
             <div id="header-wrapper">
                 <div id="logo-wrapper">
@@ -32,17 +41,31 @@
                     <img src="assets/images/header/icones/panier.png" alt="panier" class="panier">
                 </div>
             </div>
-
+            <!-- NAVIGATION  -->
             <div class="fullPageMenu" id="nav">
                 <div class="nav">
                     <ul class="li-hidden">
-                        <li><a href="#" data-text="Home">Home</a></li>
-                        <li><a href="#" data-text="About">About</a></li>
-                        <li><a href="#" data-text="Contact">Contact</a></li>
-                        <li><a href="#" data-text="Products">Products</a></li>
+                        <li>
+                            <a href="#" data-text="Home">Home</a>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="#" data-text="About">About</a>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="#" data-text="Contact">Contact</a>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="#" data-text="Products">Products</a>
+                            <span></span>
+                        </li>
                     </ul>
                 </div>
-                <img src="assets/images/header/plant-header.jpg">
+                <!-- <div class="img-wrapper">
+                    <img src="assets/images/header/plant-header.jpg">
+                </div> -->
             </div>
         </div>
 
@@ -50,12 +73,10 @@
             <div class="content">
                 <div class="content-infos">
                     <h1>
-                        Lorem ipsum dolor set consecutir det.
+                        Lorem ipsum <span class="bold-txt">dolor</span> set <span class="bold-txt">consecutir</span> det.
                     </h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum, eget penatibus vel lorem arcu nam a ac vulputate. Nunc ante quis in vitae porttitor a semper amet. Lectus aliquam at donec purus purus, diam felis ac. Convallis faucibus lectus etiam enim.</p>
-                    <div class="cta-discover">
-                        <a>Découvrez nos produits</a>
-                    </div>
+                        <a class="btn primary-btn">Découvrez nos produits</a>
 
                 </div>
                 <div class="content-socialMedia">
@@ -71,17 +92,16 @@
                 </div>
 
             </div>
-
         </div>
-
     </div>
 </body>
-<!-- GSAP -->
-<script src="assets/js/gsap/gsap.js"></script>
-<!-- BOOTSTRAP -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <!-- JS -->
+<script src="assets/js/splashscreen.js"></script>
 <script src="assets/js/header.js"></script>
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 <!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
