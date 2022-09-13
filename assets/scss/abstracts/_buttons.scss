@@ -1,0 +1,18 @@
+.cta-discover {
+    width: 250px;
+    border: $green;
+    height: 40px;
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.2s ease-in-out;
+    font-family: $text;
+    cursor: pointer;
+    &:hover {
+        background-color: white;
+        color: $green;
+        border: 1px solid $green;
+    }
+}
