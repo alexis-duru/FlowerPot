@@ -18,7 +18,82 @@
 </head>
 
 <body>
-    <header style="height: 100vh; background: red;"></header>
+    <div class="first-section">
+        <!-- SPLASHSCREEN -->
+        <div class="intro">
+            <h1 class="logo-header">
+                <span class="logo">Flo</span><span class="logo">wer</span><span class="logo">pot</span>
+            </h1>
+        </div>
+
+        <!-- HEADER -->
+        <div id="header">
+            <div id="header-wrapper">
+                <div id="logo-wrapper">
+                    <a href="index.html">
+                        <img src="assets/images/header/Logo.png" alt="logo" class="logo">
+                        <p>FlowerPot</p>
+                    </a>
+                </div>
+                <div id="menu-wrapper">
+                    <a class="menu" id="menu-toggle" onclick="menuToggle(), myFunction()">Menu</a>
+                    <img src="assets/images/header/icones/profil.png" alt="profil" class="profil">
+                    <img src="assets/images/header/icones/panier.png" alt="panier" class="panier">
+                </div>
+            </div>
+            <!-- NAVIGATION  -->
+            <div class="fullPageMenu" id="nav">
+                <div class="nav">
+                    <ul class="li-hidden">
+                        <li>
+                            <a href="#" data-text="Home">Home</a>
+                            <img src="assets/images/header/leaf.png">
+                        </li>
+                        <li>
+                            <a href="#" data-text="About">About</a>
+                            <img src="assets/images/header/leaf.png">
+                        </li>
+                        <li>
+                            <a href="#" data-text="Contact">Contact</a>
+                            <img src="assets/images/header/leaf.png">
+                        </li>
+                        <li>
+                            <a href="#" data-text="Products">Products</a>
+                            <img src="assets/images/header/leaf.png">
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="img-wrapper">
+                    <img src="assets/images/header/plant-header.jpg">
+                </div> -->
+            </div>
+        </div>
+
+        <div class="wrapper-content">
+            <div class="content">
+                <div class="content-infos">
+                    <h1>
+                        Lorem ipsum <span class="bold-txt">dolor</span> set <span class="bold-txt">consecutir</span> det.
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum, eget penatibus vel lorem arcu nam a ac vulputate. Nunc ante quis in vitae porttitor a semper amet. Lectus aliquam at donec purus purus, diam felis ac. Convallis faucibus lectus etiam enim.</p>
+                        <a class="btn primary-btn">Découvrez nos produits</a>
+
+                </div>
+                <div class="content-socialMedia">
+                    <div class="socialMedia">
+                        <a id="facebook">
+                            <img src="assets/images/socials/facebook.svg" alt="facebook">
+                        </a>
+                        <a id="instagram">
+                            <img src="assets/images/socials/instagram.svg" alt="instagram">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
     <section class="about">
         <div class="wrapper-row">
             <div class="about__company-content">
@@ -146,6 +221,8 @@
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
 <!-- JS -->
+<script src="assets/js/splashscreen.js"></script>
+<script src="assets/js/header.js"></script>
 <script src="assets/js/homepage.js"></script>
 <!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
