@@ -10,10 +10,33 @@
     flex-direction: column;
     justify-content: center;
 
+    & h1 {
+        background: #00372e;
+        color: #fff;
+        width: fit-content;
+        padding: .6rem;
+        font-size: 3rem;
+    }
+
     & span {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         display: flex;
         flex-direction: row;
         gap: .6rem;
+        background: #00372e;
+        color: #fff;
+        width: fit-content;
+        padding: .6rem;
+
+        & a {
+            color: #fff;
+        }
+    }
+}
+
+@media(max-width:340px){
+    .products__banner {
+        padding: 1rem;
+        align-items: center;
     }
 }
