@@ -851,6 +851,7 @@ a {
   background: #00372e;
   color: #fff;
   width: fit-content;
+  padding: 0.6rem;
 }
 .products__banner span a {
   color: #fff;
