@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    user-select: none;
     #header-wrapper {
         max-width: 134rem;
         padding: 0 4rem;
