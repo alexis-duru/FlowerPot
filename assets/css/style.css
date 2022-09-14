@@ -38,12 +38,12 @@ a:visited {
 
 @font-face {
   font-family: "fraunces";
-  src: url(/assets/font/Fraunces_Bold.ttf) format("ttf");
+  src: url("../font/Fraunces_Bold.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "poppins";
-  src: url(/assets/font/Poppins_Regular.ttf) format("ttf");
+  src: url("../font/Poppins_Regular.woff2") format("woff2");
   font-display: swap;
 }
 html {
@@ -218,6 +218,7 @@ html label {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  user-select: none;
 }
 #header #header-wrapper {
   max-width: 134rem;
@@ -502,6 +503,7 @@ html label {
 .menu:hover p {
   opacity: 1;
 }
+
 .footer {
   background: #191919;
   justify-content: space-between;
@@ -605,6 +607,7 @@ html label {
   font-size: 1rem;
   font-family: "poppins";
 }
+
 .section__info {
   padding: 40px 0;
   height: 100%;
