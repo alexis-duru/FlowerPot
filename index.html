@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -14,69 +14,33 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- COMPONENTS -->
+    <script src="components/primarynavbar.js" type="text/javascript" defer></script>
     <title>FlowerPot - Buy a pot to feed the earth</title>
 </head>
 
 <body>
     <div class="first-section">
-        <!-- SPLASHSCREEN -->
+        <!-- SPLASHSCREEN 
         <div class="intro">
             <h1 class="logo-header">
                 <span class="logo">Flo</span><span class="logo">wer</span><span class="logo">pot</span>
             </h1>
-        </div>
+        </div>-->
 
-        <!-- HEADER -->
-        <div id="header">
-            <div id="header-wrapper">
-                <div id="logo-wrapper">
-                    <a href="index.html">
-                        <img src="assets/images/header/Logo.png" alt="logo" class="logo">
-                        <p>FlowerPot</p>
-                    </a>
-                </div>
-                <div id="menu-wrapper">
-                    <a class="menu" id="menu-toggle" onclick="menuToggle(), myFunction()">Menu</a>
-                    <img src="assets/images/header/icones/profil.png" alt="profil" class="profil">
-                    <img src="assets/images/header/icones/panier.png" alt="panier" class="panier">
-                </div>
-            </div>
-            <!-- NAVIGATION  -->
-            <div class="fullPageMenu" id="nav">
-                <div class="nav">
-                    <ul class="li-hidden">
-                        <li>
-                            <a href="#" data-text="Home">Home</a>
-                            <img src="assets/images/header/leaf.png">
-                        </li>
-                        <li>
-                            <a href="#" data-text="About">About</a>
-                            <img src="assets/images/header/leaf.png">
-                        </li>
-                        <li>
-                            <a href="#" data-text="Contact">Contact</a>
-                            <img src="assets/images/header/leaf.png">
-                        </li>
-                        <li>
-                            <a href="#" data-text="Products">Products</a>
-                            <img src="assets/images/header/leaf.png">
-                        </li>
-                    </ul>
-                </div>
-                <!-- <div class="img-wrapper">
-                    <img src="assets/images/header/plant-header.jpg">
-                </div> -->
-            </div>
-        </div>
+        <navbar-primary></navbar-primary>
 
         <div class="wrapper-content">
             <div class="content">
                 <div class="content-infos">
                     <h1>
-                        Lorem ipsum <span class="bold-txt">dolor</span> set <span class="bold-txt">consecutir</span> det.
+                        Lorem ipsum <span class="bold-txt">dolor</span> set <span class="bold-txt">consecutir</span>
+                        det.
                     </h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum, eget penatibus vel lorem arcu nam a ac vulputate. Nunc ante quis in vitae porttitor a semper amet. Lectus aliquam at donec purus purus, diam felis ac. Convallis faucibus lectus etiam enim.</p>
-                        <a class="btn primary-btn">Découvrez nos produits</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum, eget penatibus vel lorem arcu
+                        nam a ac vulputate. Nunc ante quis in vitae porttitor a semper amet. Lectus aliquam at donec
+                        purus purus, diam felis ac. Convallis faucibus lectus etiam enim.</p>
+                    <a class="btn primary-btn">Découvrez nos produits</a>
 
                 </div>
                 <div class="content-socialMedia">
@@ -155,56 +119,66 @@
 
     <section class="products">
         <div class="wrapper-column">
-            <ul class="products__list">
-                <li class="div1"><img src="./assets/images/flowerpot-product-item.webp">
+            <ul class="row products__list">
+                <li class="col-sm-3">
+                    <img src="./assets/images/flowerpot-product-item.webp">
                     <h3>Pot de fleur</h3>
                     <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
                     <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
                         produit</a>
                 </li>
-                <li class="div2"><img src="./assets/images/flowerpot-product-item.webp">
+                <li class="col-sm-3">
+                    <img src="./assets/images/flowerpot-product-item.webp">
                     <h3>Pot de fleur</h3>
                     <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                    <p class="product__price">16,99 €</p> <a class="btn secondary-btn"
-                        href="/nos-produits/produits">Consulter le produit</a>
+                    <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
+                        produit</a>
                 </li>
-                <li class="div3"><img src="./assets/images/flowerpot-product-item.webp">
+                <li class="col-sm-3">
+                    <img src="./assets/images/flowerpot-product-item.webp">
                     <h3>Pot de fleur</h3>
                     <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                    <p class="product__price">16,99 €</p> <a class="btn secondary-btn"
-                        href="/nos-produits/produits">Consulter le produit</a>
+                    <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
+                        produit</a>
                 </li>
-                <li class="div4"><img src="./assets/images/flowerpot-product-item.webp">
+                <li class="col-sm-3">
+                    <img src="./assets/images/flowerpot-product-item.webp">
                     <h3>Pot de fleur</h3>
                     <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                    <p class="product__price">16,99 €</p> <a class="btn secondary-btn"
-                        href="/nos-produits/produits">Consulter le produit</a>
+                    <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
+                        produit</a>
                 </li>
-                <li class="div1"><img src="./assets/images/flowerpot-product-item.webp">
+                <li class="col-sm-3">
+                    <img src="./assets/images/flowerpot-product-item.webp">
                     <h3>Pot de fleur</h3>
                     <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                    <p class="product__price">16,99 €</p> <a class="btn secondary-btn"
-                        href="/nos-produits/produits">Consulter le produit</a>
+                    <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
+                        produit</a>
                 </li>
-                <li class="div2"><img src="./assets/images/flowerpot-product-item.webp">
+                <li class="col-sm-3">
+                    <img src="./assets/images/flowerpot-product-item.webp">
                     <h3>Pot de fleur</h3>
                     <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                    <p class="product__price">16,99 €</p> <a class="btn secondary-btn"
-                        href="/nos-produits/produits">Consulter le produit</a>
+                    <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
+                        produit</a>
                 </li>
-                <li class="div3"><img src="./assets/images/flowerpot-product-item.webp">
+                <li class="col-sm-3">
+                    <img src="./assets/images/flowerpot-product-item.webp">
                     <h3>Pot de fleur</h3>
                     <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                    <p class="product__price">16,99 €</p> <a class="btn secondary-btn"
-                        href="/nos-produits/produits">Consulter le produit</a>
+                    <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
+                        produit</a>
                 </li>
-                <li class="div4"><img src="./assets/images/flowerpot-product-item.webp">
+                <li class="col-sm-3">
+                    <img src="./assets/images/flowerpot-product-item.webp">
                     <h3>Pot de fleur</h3>
                     <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                    <p class="product__price">16,99 €</p> <a class="btn secondary-btn"
-                        href="/nos-produits/produits">Consulter le produit</a>
+                    <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
+                        produit</a>
                 </li>
             </ul>
+
+
             <div class="btn-container">
                 <a class="btn primary-btn" href="/contact">Découvrez l'ensemble du catalogue</a>
             </div>
