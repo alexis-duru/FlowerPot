@@ -204,6 +204,24 @@ html label {
     transform: translateY(0px);
   }
 }
+.newsletter {
+  background-color: #013A2E;
+}
+.newsletter .newsletter-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 150px;
+}
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 600px;
+}
+
 .secondary__header {
   background-color: #F8F8F8;
   position: relative !important;
@@ -502,6 +520,7 @@ html label {
 .menu:hover p {
   opacity: 1;
 }
+
 .footer {
   background: #191919;
   justify-content: space-between;
@@ -605,6 +624,7 @@ html label {
   font-size: 1rem;
   font-family: "poppins";
 }
+
 .section__info {
   padding: 40px 0;
   height: 100%;

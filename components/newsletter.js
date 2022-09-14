@@ -1,4 +1,11 @@
-<link href="https://cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+class Newsletter extends HTMLElement {
+    constructor() {
+      super();
+    }
+  
+    connectedCallback() {
+      this.innerHTML = `
+      <link href="https://cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
 
 <div class='newsletter'>
     <div class="wrapper-row">
@@ -67,3 +74,10 @@
     </div>
     </div>
 </div>
+
+
+      `;
+    }
+  }
+  
+  customElements.define('newsletter-component', Newsletter);
