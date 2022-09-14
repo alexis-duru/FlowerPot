@@ -1,0 +1,19 @@
+.products__banner {
+    height: 160px;
+    padding: 4rem;
+    background-image: url(../../../assets/images/header/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & span {
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: row;
+        gap: .6rem;
+    }
+}
