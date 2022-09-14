@@ -834,7 +834,6 @@ html label {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
   row-gap: 4rem;
 }
 .products__list h3, .products__list .product__price {
@@ -868,11 +867,32 @@ html label {
   flex-direction: column;
   justify-content: center;
 }
+.products__banner h1 {
+  background: #00372e;
+  color: #fff;
+  width: fit-content;
+  padding: 0.6rem;
+  font-size: 3rem;
+}
 .products__banner span {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   display: flex;
   flex-direction: row;
   gap: 0.6rem;
+  background: #00372e;
+  color: #fff;
+  width: fit-content;
+  padding: 0.6rem;
+}
+.products__banner span a {
+  color: #fff;
+}
+
+@media (max-width: 340px) {
+  .products__banner {
+    padding: 1rem;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
