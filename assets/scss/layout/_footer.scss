@@ -6,9 +6,11 @@
 
 }
 .user_footer{
+    max-width: 30px ;
     display: flex;
     align-items: center;
     padding-block: 30px;
+    justify-content: space-between;
 }
 .reseaux{
     color: #FFFFFF;
