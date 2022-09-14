@@ -497,92 +497,104 @@ html label {
   background: black;
   justify-content: space-between;
   width: 100%;
-  height: 40vh;
+  height: auto;
 }
 .footer .user_footer {
   display: flex;
   align-items: center;
-  padding-block: 30px;
   justify-content: space-between;
   width: 100%;
-  height: 100%;
+  height: 30vh;
 }
 .footer .user_footer .reseaux {
   color: #FFFFFF;
+  display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   width: 50%;
+  height: 80%;
+}
+.footer .user_footer .reseaux .wrapper-reseaux {
+  width: 80%;
   height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .footer .user_footer .reseaux .logo {
+  width: auto;
+  height: auto;
+  opacity: 1;
   display: flex;
   align-items: center;
-  font-family: "Fraunces" !important;
-  padding-block: 10px;
-  opacity: 1;
+}
+.footer .user_footer .reseaux .logo h2 {
+  font-size: 2rem;
 }
 .footer .user_footer .reseaux .logo img {
-  padding-right: 5px;
-  opacity: 1;
   color: white;
+  width: 25px;
+  margin-right: 10px;
 }
-.footer .user_footer .users_info {
+.footer .user_footer .reseaux .txt {
+  width: 60%;
+  height: auto;
+}
+.footer .user_footer .reseaux .txt p {
+  font-size: 1rem;
+}
+.footer .user_footer .reseaux .links a img {
+  margin-right: 10px;
+}
+.footer .user_footer .infos {
   display: flex;
   justify-content: space-between;
   font-family: "Poppins" !important;
   width: 50%;
-}
-.footer .user_footer .users_info li {
-  font-family: "Open Sans";
-  color: #FFFFFF;
-  padding-block: 3px;
-  padding-left: 10px;
-}
-.footer .user_footer .users_info li a {
+  height: 100%;
   color: white;
-}
-.footer .user_footer .users_info .logo {
-  display: flex;
   align-items: center;
-  font-family: "Fraunces" !important;
-  padding-block: 10px;
 }
-.footer .user_footer .users_info .logo img {
-  padding-right: 5px;
-  opacity: 1;
+.footer .user_footer .infos .list_info {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+}
+.footer .user_footer .infos .list_info li h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.footer .user_footer .infos .list_info li ul li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.footer .user_footer .infos .list_info li ul li a {
   color: white;
-}
-.footer .user_footer .users_info .txt {
-  font-size: 20px;
-  padding-block: 30px;
-}
-.footer .user_footer .users_info h3 {
-  color: #FFFFFF;
-  font-size: 22px !important;
-}
-.footer .user_footer .users_info .links a {
-  color: #FFFFFF;
-  background-color: transparent;
-}
-.footer .right {
-  color: #FFFFFF;
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-}
-.footer .right .right_p {
-  color: #FFFFFF;
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  padding-block: 30px;
 }
 .footer .line {
-  width: 1436.47px;
-  height: 0px;
+  width: 89%;
+  height: 1px;
   left: 241.77px;
   top: 348px;
-  border: 1px solid #FFFFFF;
+  color: white;
+  background-color: white;
+  margin: auto;
+}
+.footer .right {
+  height: 6vh;
+  width: 88%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: auto;
+  align-items: center;
+}
+.footer .right .right_p {
+  font-size: 1rem;
+  font-family: "poppins";
 }
 
 .section__info {
