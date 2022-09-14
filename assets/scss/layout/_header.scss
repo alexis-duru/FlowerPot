@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    user-select: none;
+    // user-select: none;
     #header-wrapper {
         max-width: 134rem;
         padding: 0 4rem;
@@ -115,7 +115,7 @@
                 }
                 .btn {
                     margin-top: 0px;
-                    font-size: 1rem;
+                    font-size: 1.6rem;
                     width: 50%;
 
                 }
@@ -159,6 +159,9 @@
     align-items: center;
     transform: translateY(100%);
     z-index: 1000000;
+    -webkit-overflow-scrolling: none;
+    overflow: hidden;
+    overscroll-behavior: none;
     .nav {
         display: flex;
         height: 100%;
@@ -167,6 +170,9 @@
         align-items: center;
         font-size: 3rem;
         font-family: $title;
+        -webkit-overflow-scrolling: none;
+        overflow: hidden;
+        overscroll-behavior: none;
         ul {
             display: flex;
             justify-content: center;

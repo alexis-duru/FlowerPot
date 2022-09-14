@@ -218,7 +218,6 @@ html label {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  user-select: none;
 }
 #header #header-wrapper {
   max-width: 134rem;
@@ -329,7 +328,7 @@ html label {
 }
 .first-section .wrapper-content .content .content-infos .btn {
   margin-top: 0px;
-  font-size: 1rem;
+  font-size: 1.6rem;
   width: 50%;
 }
 .first-section .wrapper-content .content .content-socialMedia {
@@ -368,6 +367,9 @@ html label {
   align-items: center;
   transform: translateY(100%);
   z-index: 1000000;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 .fullPageMenu .nav {
   display: flex;
@@ -377,6 +379,9 @@ html label {
   align-items: center;
   font-size: 3rem;
   font-family: "fraunces";
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 .fullPageMenu .nav ul {
   display: flex;
