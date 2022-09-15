@@ -29,7 +29,7 @@ class Footer extends HTMLElement {
                   <h3>BESOIN D'AIDE ?</h3>
                   <ul>
                     <li><a href="tel:+33505050505">+33 5 05 05 05 05</a> </li>
-                    <li><a href="mailto:example@gmail.com>example@gmail.com</a> </li>
+                    <li><a href="mailto:example@gmail.com">example@gmail.com</a> </li>
                     
                 </ul>
             </li>
