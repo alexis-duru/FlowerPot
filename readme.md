@@ -9,7 +9,6 @@ dart-sass/sass scss/style.scss css/style.css --watch
 
 # TO DO#
 Transition smooth entre les pages
-Finir page compte
 Pop-up panier
 Ajouter footer dans les pages
 Page about

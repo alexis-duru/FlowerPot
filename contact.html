@@ -12,7 +12,104 @@
 
 <body>
     <navbar-component></navbar-component>
-
+    <section class="contact">
+        <div class="wrapper-column">
+            <div class="page__banner">
+                <h1>Contactez-nous</h1>
+                <span><a href="/">Accueil</a> » Contactez-nous</span>
+            </div>
+            <section class="contact__container">
+                <section class="contact__form__container">
+                    <h2>Contactez-nous dès maintenant !</h2>
+                    <p class="primary__content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sed perspiciatis facere,
+                        similique
+                        quas doloremque reiciendis consequuntur quis maiores dolor possimus ipsum aperiam ratione
+                        repudiandae molestiae magnam nulla repellat animi!
+                    </p>
+                    <p class="primary__content"><span class="strong-green">*</span> = Champs obligatoire.
+                    </p>
+                    <form action="/validation-mail" class="contact__form" data-netlify-recaptcha="true" method="POST"
+                        name="contact"><input type="hidden" name="form-name" value="contact">
+                        <div><label for="firstname">Prénom <span class="strong-green">*</span></label> <input id="firstname"
+                                name="firstname" placeholder="Votre prénom" required=""></div>
+                        <div><label for="lastname">Nom <span class="strong-green">*</span></label> <input id="lastname"
+                                name="lastname" placeholder="Votre nom" required=""></div>
+                        <div><label for="email">Email <span class="strong-green">*</span></label> <input id="email"
+                                name="email" placeholder="Ex : exemple@gmail.com" required=""></div>
+                        <div><label for="phone">Téléphone</label> <input id="phone" name="phone"
+                                placeholder="Ex : 05 05 05 05 05"></div>
+                        <div><label for="message">Message <span class="strong-green">*</span></label> <textarea rows="4"
+                                id="message" name="message" placeholder="Votre message" required=""></textarea></div>
+                        <div><label for="rgpd"><input type="checkbox" id="rgpd" name="Gestion des données personnelles"
+                                    required="">
+                                En cochant cette case vous acceptez que vos coordonnées soient
+                                utilisées pour vous répondre.
+                                <a href="/politique-de-confidentialite">
+                                    Notre politique de confidentialité</a>. <span class="strong-green">*</span></label>
+                        </div>
+                        <div>
+                            <script type="text/javascript" async=""
+                                src="https://www.gstatic.com/recaptcha/releases/zmiYzsHi8INTJBWt2QZC9aM5/recaptcha__fr.js"
+                                crossorigin="anonymous"
+                                integrity="sha384-kuTnwh5voHCljdYBt1dReYhJ9hCezI9FZy7xG9lLByiQBDr+raQhciNKqKxOcyjs"></script>
+                            <script src="https://www.google.com/recaptcha/api.js"></script>
+                            <div class="g-recaptcha" data-sitekey="6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9">
+                                <div style="width: 304px; height: 78px;">
+                                    <div><iframe title="reCAPTCHA"
+                                            src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9&amp;co=aHR0cHM6Ly93d3cuc2FuY3Rpc2RyYWNvbmlzcGV0cm9jb3JpYS5jb206NDQz&amp;hl=fr&amp;v=zmiYzsHi8INTJBWt2QZC9aM5&amp;size=normal&amp;cb=rl9rlamz38sn"
+                                            width="304" height="78" role="presentation" name="a-xd1tfodtg64"
+                                            frameborder="0" scrolling="no"
+                                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                    </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                        class="g-recaptcha-response"
+                                        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                </div><iframe style="display: none;"></iframe>
+                            </div>
+                            <noscript>
+                                <div>
+                                    <div style="width: 302px; height: 422px; position: relative;">
+                                        <div style="width: 302px; height: 422px; position: absolute;">
+                                            <iframe
+                                                src="https://www.google.com/recaptcha/api/fallback?k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9"
+                                                frameborder="0" scrolling="no"
+                                                style="width: 302px; height:422px; border-style: none;">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+                                        <textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                            class="g-recaptcha-response"
+                                            style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;"></textarea>
+                                    </div>
+                                </div>
+                            </noscript>
+                        </div>
+                        <div class="form__send"><button type="submit" role="button"
+                                class="btn primary-btn send-btn">
+                                Envoyer
+                            </button></div>
+                    </form>
+                </section>
+                <section class="contact__social__container">
+                    <div role="img" aria-label="Photographie d'un pot de fleur'"
+                        class="contact__social-1">
+                        <h2>Rejoignez-nous sur Facebook !</h2>
+                        <div class="btn__container"><a href="https://www.facebook.com/" target="_blank"
+                                title="Lien vers la page Facebook FlowerPot" class="btn primary-btn send-btn">Facebook</a></div>
+                    </div>
+                    <div role="img" aria-label="Photographie d'un pot de fleur"
+                        class="contact__social-2">
+                        <h2>Rejoignez-nous sur Instagram !</h2>
+                        <div class="btn__container"><a href="https://www.instagram.com/"
+                                target="_blank" title="Lien vers la page Instagram du FlowerPot"
+                                class="btn primary-btn send-btn">Instagram</a></div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </section>
     <script src="assets/js/header.js"></script>
 </body>
 

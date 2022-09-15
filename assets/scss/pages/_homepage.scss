@@ -1,6 +1,6 @@
 /*About*/
 .about,
-.contact__banner, .products {
+.contact__banner, .products, .contact {
     padding: 70px 0;
     height: 100%;
     width: 100%;
@@ -13,7 +13,7 @@
 .about__company-content {
     width: 50%;
     margin-right: 6rem;
-    @media screen and (max-width: 900px){
+    @media screen and (max-width: 900px){ 
         width: 100%;
         margin-right: 0;
     }
