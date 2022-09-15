@@ -32,10 +32,6 @@ a {
   color: initial;
 }
 
-a:visited {
-  color: initial;
-}
-
 @font-face {
   font-family: "fraunces";
   src: url("../font/Fraunces_Bold.woff2") format("woff2");
@@ -53,24 +49,28 @@ html h1 {
   font-size: 3rem;
   font-family: "fraunces";
   font-weight: bold;
+  line-height: 3rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   html h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 2rem;
   }
 }
 html h2 {
   font-size: 3rem;
+  line-height: 3rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 900px) {
   html h2 {
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 2rem;
   }
 }
 html h3 {
   font-size: 2.5rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   html h3 {
     font-size: 2rem;
   }
@@ -87,15 +87,20 @@ html p {
   font-size: 1.5rem;
   font-family: "poppins";
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   html p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  html .primary-btn, html .secondary-btn {
+    font-size: 1.2rem;
   }
 }
 html label {
   font-size: 2rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   html label {
     font-size: 1.5rem;
   }
@@ -107,7 +112,7 @@ html label {
 }
 
 ::selection {
-  color: #00372E;
+  color: #fff;
   background: #191919;
 }
 
@@ -129,9 +134,19 @@ html label {
   padding: 0 4rem;
   flex-direction: row;
 }
+@media screen and (max-width: 900px) {
+  .wrapper-row {
+    flex-direction: column;
+  }
+}
 
 .wrapper-row + .wrapper-row {
   padding-top: 12rem;
+}
+@media screen and (max-width: 900px) {
+  .wrapper-row + .wrapper-row {
+    padding-top: 8rem;
+  }
 }
 
 .strong-green {
@@ -293,6 +308,7 @@ html label {
   width: 100vw;
   background-image: url("../../../assets/images/header/header.png");
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -326,10 +342,18 @@ html label {
 .first-section .wrapper-content .content .content-infos p {
   margin-bottom: 50px;
 }
-.first-section .wrapper-content .content .content-infos .btn {
-  margin-top: 0px;
-  font-size: 1.6rem;
-  width: 50%;
+.first-section .wrapper-content .content .content-infos div {
+  display: flex;
+}
+@media screen and (max-width: 900px) {
+  .first-section .wrapper-content .content .content-infos {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .first-section .wrapper-content .content .content-infos {
+    width: 100%;
+  }
 }
 .first-section .wrapper-content .content .content-socialMedia {
   width: 50%;
@@ -352,6 +376,11 @@ html label {
 .first-section .wrapper-content .content .content-socialMedia .socialMedia a img {
   width: 28px;
   height: auto;
+}
+@media screen and (max-width: 900px) {
+  .first-section {
+    background-position: initial;
+  }
 }
 
 .fullPageMenu {
@@ -786,11 +815,15 @@ html label {
   width: 50%;
   margin-right: 6rem;
 }
+@media screen and (max-width: 900px) {
+  .about__company-content {
+    width: 100%;
+    margin-right: 0;
+  }
+}
 .about__company-content h2 {
   font-family: "fraunces";
   font-weight: bold;
-  font-size: 4rem;
-  line-height: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -798,16 +831,28 @@ html label {
 .about__product-img {
   width: 50%;
 }
+@media screen and (max-width: 900px) {
+  .about__company-img,
+.about__product-img {
+    width: 100% !important;
+    margin-top: 4rem;
+    order: 2;
+  }
+}
 
 .about__product-content {
   width: 50%;
   margin-left: 6rem;
 }
+@media screen and (max-width: 900px) {
+  .about__product-content {
+    width: 100%;
+    margin-left: 0;
+  }
+}
 .about__product-content h2 {
   font-family: "fraunces";
   font-weight: bold;
-  font-size: 4rem;
-  line-height: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -816,6 +861,11 @@ html label {
 }
 
 /*Contact banner*/
+@media screen and (max-width: 900px) {
+  .contact__banner {
+    padding: 0;
+  }
+}
 .contact__banner .banner {
   height: 20rem;
   width: 100%;
@@ -863,7 +913,7 @@ html label {
   color: gray;
 }
 
-.products__banner {
+.page__banner {
   height: 160px;
   padding: 4rem;
   background-image: url(../../../assets/images/header/header.png);
@@ -875,14 +925,14 @@ html label {
   flex-direction: column;
   justify-content: center;
 }
-.products__banner h1 {
+.page__banner h1 {
   background: #00372e;
   color: #fff;
   width: fit-content;
   padding: 0.6rem;
   font-size: 3rem;
 }
-.products__banner span {
+.page__banner span {
   font-size: 1.2rem;
   display: flex;
   flex-direction: row;
@@ -892,8 +942,11 @@ html label {
   width: fit-content;
   padding: 0.6rem;
 }
-.products__banner span a {
+.page__banner span a {
   color: #fff;
+}
+.page__banner span a:hover {
+  color: #191919;
 }
 
 @media (max-width: 340px) {
@@ -901,6 +954,63 @@ html label {
     padding: 1rem;
     align-items: center;
   }
+}
+.compte {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.compte .compte__left {
+  width: 50%;
+  height: 100%;
+  background-color: #f8f8f8;
+}
+.compte .compte__left .compte__link {
+  color: #00372E;
+}
+.compte .compte__left .compte__link :hover {
+  color: #191919;
+}
+.compte .compte__left .compte__left__content {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 84px);
+  justify-content: center;
+  width: fit-content;
+}
+.compte .compte__left .compte__left__content .compte__label {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+.compte .compte__left .compte__left__content .compte__label label {
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+}
+.compte .compte__left .compte__left__content .compte__label label :hover {
+  border-color: #00372E;
+}
+.compte .compte__left .compte__left__content .compte__label input {
+  height: 4rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+.compte .compte__left .compte__left__content .compte__mdp:hover {
+  color: #00372E;
+  cursor: pointer;
+  font-weight: bold;
+  width: fit-content;
+}
+.compte .compte__right {
+  width: 50%;
+  height: 100%;
+  background-image: url("../../../assets/images/header/header.png");
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
