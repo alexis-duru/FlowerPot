@@ -1134,6 +1134,7 @@ html label {
 .send-btn {
   padding: 0.6rem 1.75rem;
   cursor: pointer;
+  border: none;
 }
 
 @media (max-width: 1000px) {
