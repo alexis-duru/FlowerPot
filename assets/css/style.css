@@ -98,16 +98,17 @@ html p {
   }
 }
 html label {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: "poppins";
 }
 @media screen and (max-width: 900px) {
   html label {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 425px) {
   html label {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -219,6 +220,40 @@ html label {
     transform: translateY(0px);
   }
 }
+@keyframes fadePage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.overlay-page {
+  position: absolute;
+  overflow: hidden;
+  background-color: #00372E;
+  width: 0vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9999999999;
+  animation: transitionPage 1.3s ease-in-out;
+}
+
+@keyframes transitionPage {
+  0% {
+    transform: translateX(100vw);
+    width: 0%;
+  }
+  50% {
+    transform: translateX(0vw);
+    width: 50%;
+  }
+  50% {
+    transform: translateX(0vw);
+    width: 100%;
+  }
+}
 .secondary__header {
   background-color: #F8F8F8;
   position: relative !important;
@@ -249,8 +284,6 @@ html label {
   align-items: center;
   justify-content: center;
   transition: 0.1s ease-in-out;
-  animation: translateTxt 7s ease-in-out;
-  animation-iteration-count: linear;
 }
 #header #header-wrapper #logo-wrapper a {
   display: flex;
@@ -261,8 +294,10 @@ html label {
   text-decoration: none;
 }
 #header #header-wrapper #logo-wrapper a img {
-  width: 30px;
+  width: 20px;
   height: auto;
+  opacity: 1 !important;
+  bottom: 0px;
 }
 #header #header-wrapper #logo-wrapper a p {
   margin-bottom: 0px;
@@ -312,6 +347,7 @@ html label {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: transitionPage 1.5s ease-in-out;
 }
 .first-section .wrapper-content {
   width: 100%;
@@ -801,7 +837,7 @@ html label {
 
 /*About*/
 .about,
-.contact__banner, .products {
+.contact__banner, .products, .contact {
   padding: 70px 0;
   height: 100%;
   width: 100%;
@@ -931,6 +967,7 @@ html label {
   width: fit-content;
   padding: 0.6rem;
   font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 .page__banner span {
   font-size: 1.2rem;
@@ -965,10 +1002,16 @@ html label {
   height: 100%;
   background-color: #f8f8f8;
 }
+@media screen and (max-width: 600px) {
+  .compte .compte__left {
+    width: 100%;
+  }
+}
 .compte .compte__left .compte__link {
   color: #00372E;
+  font-weight: bold;
 }
-.compte .compte__left .compte__link :hover {
+.compte .compte__left .compte__link:hover {
   color: #191919;
 }
 .compte .compte__left .compte__left__content {
@@ -977,7 +1020,7 @@ html label {
   flex-direction: column;
   height: calc(100% - 84px);
   justify-content: center;
-  width: fit-content;
+  width: 100%;
 }
 .compte .compte__left .compte__left__content .compte__label {
   display: flex;
@@ -995,12 +1038,15 @@ html label {
   height: 4rem;
   padding: 1rem;
   font-size: 1.6rem;
+  width: 80%;
 }
-.compte .compte__left .compte__left__content .compte__mdp:hover {
-  color: #00372E;
-  cursor: pointer;
-  font-weight: bold;
-  width: fit-content;
+@media screen and (max-width: 600px) {
+  .compte .compte__left .compte__left__content .compte__label input {
+    width: 100%;
+  }
+}
+.compte .compte__left .compte__left__content .compte__btn-container {
+  margin-bottom: 1rem;
 }
 .compte .compte__right {
   width: 50%;
@@ -1011,6 +1057,173 @@ html label {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .compte .compte__right {
+    display: none;
+  }
+}
+
+.contact__container {
+  display: flex;
+}
+
+.contact__form__container {
+  width: 70%;
+  margin-right: 8rem;
+}
+
+.primary__content {
+  margin: 24px 0;
+}
+
+.contact__form label {
+  margin-bottom: 4px;
+}
+.contact__form label a {
+  color: #00372E;
+}
+.contact__form input,
+.contact__form textarea {
+  background-color: #fff;
+  border-color: #191919;
+  border-width: 1px;
+  border-radius: 2px;
+  padding: 10px 18px;
+  outline: 0;
+  color: #191919;
+  margin-bottom: 10px;
+}
+.contact__form input, .contact__form textarea {
+  background-color: #fff;
+  border-color: #191919;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 2px;
+  padding: 10px 18px;
+  outline: none;
+  color: #191919;
+  margin-bottom: 10px;
+}
+.contact__form input::placeholder, .contact__form textarea::placeholder {
+  font-family: "poppins";
+  font-size: 1.2rem;
+}
+.contact__form div {
+  display: flex;
+  flex-direction: column;
+}
+.contact__form .form__send {
+  flex-direction: row;
+  text-transform: uppercase;
+}
+
+.contact_form_container.success {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.contact_form_container.success img {
+  width: 8rem;
+}
+
+.contact__social__container {
+  width: 30%;
+}
+.contact__social__container h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  font-family: "fraunces";
+  margin-bottom: 3rem;
+}
+
+.contact__social-1 {
+  background-image: url("../../../assets/images/flowerpot-social-facebook.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.contact__social-2 {
+  background-image: url("../../../assets/images/flowerpot-social-instagram.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.send-btn {
+  padding: 0.6rem 1.75rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .contact__social__container h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 880px) {
+  .contact__container {
+    flex-direction: column;
+  }
+
+  .contact__social__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+  .contact__social__container h2 {
+    font-size: 2rem;
+  }
+
+  .contact__social-1 {
+    width: 50%;
+    margin-right: 1rem;
+  }
+
+  .contact__social-2 {
+    width: 50%;
+    margin-left: 1rem;
+  }
+
+  .contact__form__container {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .page-contact .container-row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .contact__social-1 {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .contact__social-2 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contact__social__container {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
