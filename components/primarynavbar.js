@@ -17,7 +17,7 @@ class Header extends HTMLElement {
               <div id="menu-wrapper">
                   <a class="menu" id="menu-toggle" onclick="menuToggle(), myFunction()">Menu</a>
                   <a href="/compte.html"><img src="assets/images/header/icones/profil.png" alt="profil" class="profil"></a>
-                  <img src="assets/images/header/icones/panier.png" alt="panier" class="panier">
+                  <a href="/404.html"><img src="assets/images/header/icones/panier.png" alt="panier" class="panier"></a>
               </div>
           </div>
           <!-- NAVIGATION  -->
