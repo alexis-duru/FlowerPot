@@ -11,6 +11,7 @@
     <!-- CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
     <script src="components/navbar.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
     <title>Les produits FlowerPot - FlowerPot</title>
 </head>
 
@@ -21,157 +22,32 @@
         <section class="products">
             <div class="wrapper-column">
                 <div class="page__banner">
-                    <h1>Nos produits</h1>
+                    <h1>Détail produit</h1>
                     <span><a href="/">Accueil</a> » Nos produits</span>
                 </div>
-                <ul class="row products__list">
-                    <li class="col-sm-3">
+                <div class="single-product-wrapper">
+                    <div class="container-left">
                         <div class="card-wrapper">
                             <img src="./assets/images/flowerpot-product-item.webp">
                         </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                    <li class="col-sm-3">
-                        <div class="card-wrapper">
-                            <img src="./assets/images/flowerpot-product-item.webp">
+
+                    </div>
+                    <div class="container-right">
+                        <div class="card-wrapper-info">
+                            <div>
+                                <h3 class="translate-txt" id="product-1">Pot de fleur</h3>
+                                <span class="translate-txt" id="product-2"><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
+                                <p id="product-3" class="price translate-txt">16,99 €</p> 
+                                <p id="product-4" class="description translate-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sunt odit dolores, id quod inventore eos saepe explicabo quia iusto corporis. Adipisci vero iure cumque animi modi, placeat ex debitis!</p>
+                            </div>
+
+                            <a class="btn secondary-btn" href="nos-produits.html">Liste des produits</a>
                         </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                    <li class="col-sm-3">
-                        <div class="card-wrapper">
-                            <img src="./assets/images/flowerpot-product-item.webp">
-                        </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                    <li class="col-sm-3">
-                        <div class="card-wrapper">
-                            <img src="./assets/images/flowerpot-product-item.webp">
-                        </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                    <li class="col-sm-3">
-                        <div class="card-wrapper">
-                            <img src="./assets/images/flowerpot-product-item.webp">
-                        </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                    <li class="col-sm-3">
-                        <div class="card-wrapper">
-                            <img src="./assets/images/flowerpot-product-item.webp">
-                        </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                    <li class="col-sm-3">
-                        <div class="card-wrapper">
-                            <img src="./assets/images/flowerpot-product-item.webp">
-                        </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                    <li class="col-sm-3">
-                        <div class="card-wrapper">
-                            <img src="./assets/images/flowerpot-product-item.webp">
-                        </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                    <li class="col-sm-3">
-                        <div class="card-wrapper">
-                            <img src="./assets/images/flowerpot-product-item.webp">
-                        </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                    <li class="col-sm-3">
-                        <div class="card-wrapper">
-                            <img src="./assets/images/flowerpot-product-item.webp">
-                        </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                    <li class="col-sm-3">
-                        <div class="card-wrapper">
-                            <img src="./assets/images/flowerpot-product-item.webp">
-                        </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                    <li class="col-sm-3">
-                        <div class="card-wrapper">
-                            <img src="./assets/images/flowerpot-product-item.webp">
-                        </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                    <li class="col-sm-3">
-                        <div class="card-wrapper">
-                            <img src="./assets/images/flowerpot-product-item.webp">
-                        </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                    <li class="col-sm-3">
-                        <div class="card-wrapper">
-                            <img src="./assets/images/flowerpot-product-item.webp">
-                        </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                    <li class="col-sm-3">
-                        <div class="card-wrapper">
-                            <img src="./assets/images/flowerpot-product-item.webp">
-                        </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                    <li class="col-sm-3">
-                        <div class="card-wrapper">
-                            <img src="./assets/images/flowerpot-product-item.webp">
-                        </div>
-                        <h3>Pot de fleur</h3>
-                        <span><img src="./assets/images/flowerpot-product-rank.svg" class="product__rank">(32)</span>
-                        <p class="price">16,99 €</p> <a class="btn secondary-btn" href="/nos-produits/produits">Consulter le
-                            produit</a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
+        <footer-component></footer-component>
     </div>
 
 

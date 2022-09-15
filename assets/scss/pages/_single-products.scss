@@ -1,0 +1,90 @@
+.single-product-wrapper {
+    height: 80vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    .container-left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card-wrapper {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            img {
+                width: 70%;
+                height: auto;
+            }
+        }
+
+        @keyframes fadeImgSlide {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    }
+    .container-right {
+        width: 50%;
+        height: 100%;
+        .card-wrapper-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h3 {
+                    transform: translateX(0px);
+                    font-size: 4rem;
+                    animation: translate-txt 2s ease-in-out;
+                }
+                span {
+                    animation: translate-txt 2.5s ease-in-out;
+                }
+                .price {
+                    font-size: 2.5rem;
+                    animation: translate-txt 2.7s ease-in-out;
+                   
+                }
+                .description {
+                    width: 70%;
+                    text-align: justify;
+                    animation: translate-txt 3s ease-in-out;
+                }
+
+            }
+            H3, span, p, a {
+                margin-bottom: 10px;
+            }
+            a {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@keyframes translate-txt {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
