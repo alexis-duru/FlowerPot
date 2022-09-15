@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px;
@@ -37,13 +38,13 @@ a:visited {
 }
 
 @font-face {
-  font-family: "fraunces";
-  src: url(/assets/font/Fraunces_Bold.ttf) format("ttf");
+  font-family: ‘fraunces’;
+  src: url(‘../font/Fraunces_Bold.woff2’) format(‘woff2’);
   font-display: swap;
 }
 @font-face {
-  font-family: "poppins";
-  src: url(/assets/font/Poppins_Regular.ttf) format("ttf");
+  font-family: ‘poppins’;
+  src: url(‘../font/Poppins_Regular.woff2’) format(‘woff2’);
   font-display: swap;
 }
 html {
@@ -170,6 +171,19 @@ html label {
   color: #fff !important;
 }
 
+.third-btn {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #191919;
+  font-weight: bold;
+  --bs-btn-padding-x: 4rem;
+  --bs-btn-padding-y: .6rem;
+  margin-top: 2rem;
+}
+
 .btn-container {
   display: flex;
   justify-content: center;
@@ -212,7 +226,37 @@ html label {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  min-height: 150px;
+  min-height: 180px;
+}
+.newsletter .newsletter-content .text-white {
+  font-size: 30px;
+}
+.newsletter .newsletter-content .text-white .text-black {
+  color: black;
+}
+.newsletter .third-btn {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #191919;
+  font-weight: bold;
+  --bs-btn-padding-x: 4rem;
+  --bs-btn-padding-y: .6rem;
+  margin-top: 2rem;
+}
+.newsletter .third-btn p {
+  font-family: "poppins" !important;
+  margin-top: 8px;
+}
+.newsletter .third-btn img {
+  width: 15px;
+}
+.newsletter small {
+  color: #fff;
+  font-family: "poppins";
+  font-size: 10px;
 }
 
 #mc_embed_signup {
@@ -220,6 +264,14 @@ html label {
   clear: left;
   font: 14px Helvetica, Arial, sans-serif;
   width: 600px;
+}
+
+#mc_embed_signup {
+  width: 100%;
+}
+
+.mc-field-group {
+  font-family: "poppins";
 }
 
 .secondary__header {
@@ -565,6 +617,7 @@ html label {
   color: white;
   width: 25px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 .footer .user_footer .reseaux .txt {
   width: 60%;
@@ -574,7 +627,8 @@ html label {
   font-size: 1rem;
 }
 .footer .user_footer .reseaux .links a img {
-  margin-right: 10px;
+  margin-right: 8px;
+  width: 25px;
 }
 .footer .user_footer .infos {
   display: flex;

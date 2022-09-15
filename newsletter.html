@@ -1,19 +1,18 @@
 <link href="https://cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
 <div class='newsletter'>
     <div class="wrapper-row">
         <div class="newsletter-content">
             <div class="newsletter-left">
-                <p class="text-white">Ne ratez pas nos  <span class="text-dark">actualités</span>,<br> recevez notre newsletter !</p>
+                <p class="text-white">Ne ratez pas nos  <span class="text-black">actualités</span>,<br> recevez notre newsletter !</p>
             </div>
             <div class="nexsletter-right">
                         <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <p>Je M'inscris <span class="text-green">*</span> </p>
-                    <img src="assets/images/newsletterlogo.png" alt="newsletterlogo">
-                    
-                </button>
+                <div class="third-btn"  data-bs-toggle="modal" data-bs-target="#exampleModal"><p>Je M'inscris <span class="text-green">*</span> <img src="assets/images/newsletterlogo.png" alt="newsletterlogo"></p></div>
+
                 <div><small>*Vous acceptez que vos coordonnées soient utilisées pour vous contacter.</small></div>
+                
             
             </div>
         </div>
@@ -26,8 +25,9 @@
     <div class="modal-dialog">
     <div class="modal-content">
         <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Recevez notre newsletter !</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        
         </div>
         <div class="modal-body">
                     <!-- Begin Mailchimp Signup Form -->
@@ -50,8 +50,8 @@
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d37bc1023c71abfb267aed26f_cfc3a54052" tabindex="-1" value=""></div>
                     <div class="optionalParent">
                         <div class="clear foot">
-                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                            <p class="brandingLogo"><a href="http://eepurl.com/h-5M0P" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn primary-btn">
+                            <p class="brandingLogo"><a href="http://eepurl.com/h-5M0P" title="Mailchimp - email marketing made easy and fun"></a></p>
                         </div>
                     </div>
                 </div>
@@ -61,8 +61,8 @@
             <!--End mc_embed_signup-->
         </div>
         <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn third-btn" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn primary-btn">Save changes</button>
         </div>
     </div>
     </div>

@@ -14,7 +14,7 @@ class Footer extends HTMLElement {
                   <h2>FlowerPot</h2>
               </div>
               <div class = "txt">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae distinctio modi, odit eum officia minima, atque accusamus praesentium impedit iure dolor, earum necessitatibus quasi fuga asperiores saepe? Exercitationem, rem aut. </p>
               </div>
               <div class="links">
                   <a href=""><img src="assets/images/Icon_Face_Blanc.svg" alt="Logo Facebook Blanc"></a>
