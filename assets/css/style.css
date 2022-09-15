@@ -676,6 +676,7 @@ html label {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin: 0 auto;
   max-width: 134rem;
   padding: 0 4rem;
   margin-bottom: 2rem;
@@ -794,7 +795,7 @@ html label {
   color: white;
 }
 .footer .line {
-  width: 89%;
+  width: 100%;
   height: 1px;
   left: 241.77px;
   top: 348px;
@@ -803,7 +804,6 @@ html label {
   margin: auto;
 }
 .footer .right {
-  height: 6vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -812,6 +812,7 @@ html label {
   align-items: center;
   max-width: 134rem;
   padding: 0 4rem;
+  margin-top: 1rem;
 }
 @media (max-width: 420px) {
   .footer .right {
