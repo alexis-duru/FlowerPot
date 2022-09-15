@@ -974,7 +974,7 @@ html label {
   color: #00372E;
   font-weight: bold;
 }
-.compte .compte__left .compte__link a :hover {
+.compte .compte__left .compte__link:hover {
   color: #191919;
 }
 .compte .compte__left .compte__left__content {

@@ -14,7 +14,7 @@
         .compte__link {
             color: $green;
             font-weight: bold;
-            a :hover {
+            &:hover {
                 color: $black;
             }
         }
