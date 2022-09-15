@@ -29,10 +29,6 @@ class Header extends HTMLElement {
                           <img src="assets/images/header/leaf.png">
                       </li>
                       <li>
-                          <a href="/qui-sommes-nous.html" data-text="About">About</a>
-                          <img src="assets/images/header/leaf.png">
-                      </li>
-                      <li>
                       <a href="/nos-produits.html" data-text="Products">Products</a>
                       <img src="assets/images/header/leaf.png">
                   </li>
