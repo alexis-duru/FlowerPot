@@ -1,5 +1,5 @@
 ::selection {
-    color:  $green;
+    color: #fff;
     background: $black;
 }
 .wrapper-column {
@@ -18,9 +18,15 @@
     margin: 0 auto;
     padding: 0 4rem;
     flex-direction: row;
+    @media screen and (max-width: 900px){
+        flex-direction: column;
+    }
 }
 .wrapper-row + .wrapper-row {
     padding-top: 12rem;
+    @media screen and (max-width: 900px){
+        padding-top: 8rem;
+    }
 }
 .strong-green{
     color: $green;

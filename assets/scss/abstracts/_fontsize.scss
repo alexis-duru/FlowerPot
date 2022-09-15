@@ -4,21 +4,25 @@ html {
             font-size: 3rem;
             font-family: $title;
             font-weight: bold;
-            @media screen and (max-width: 768px){
-                font-size: 3rem;
+            line-height: 3rem;
+            @media screen and (max-width: 900px){
+                font-size: 2rem;
+                line-height: 2rem;
             }
         }
         
         h2 {
             font-size: 3rem;
-            @media screen and (max-width: 425px){
-                font-size: 3rem;
+            line-height: 3rem;
+            @media screen and (max-width: 900px){
+                font-size: 2rem;
+                line-height: 2rem;
             }
         }
         
         h3 {
             font-size: 2.5rem;
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 900px){
                 font-size: 2rem; 
             }     
             @media screen and (max-width: 425px){
@@ -33,18 +37,24 @@ html {
         p {
             font-size: 1.5rem;
             font-family: $text;
-            @media screen and (max-width: 768px){
-                font-size: 1rem; 
+            @media screen and (max-width: 900px){
+                font-size: 1.2rem; 
+            }
+        }
+        .primary-btn, .secondary-btn {
+            @media screen and (max-width: 900px){
+                font-size: 1.2rem; 
             }
         }
         
         label {
-            font-size: 2rem;
-            @media screen and (max-width: 768px){
-                font-size: 1.5rem; 
+            font-size: 1.5rem;
+            font-family: $text;
+            @media screen and (max-width: 900px){
+                font-size: 1.2rem; 
             }
             @media screen and (max-width: 425px){
-                font-size: 1.5rem; 
+                font-size: 1.2rem; 
             }
         }
 

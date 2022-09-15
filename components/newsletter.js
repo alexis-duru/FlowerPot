@@ -74,8 +74,6 @@ class Newsletter extends HTMLElement {
           </div>
           </div>
       </div>
-      
-
       `;
     }
   }

@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    // user-select: none;
     #header-wrapper {
         max-width: 134rem;
         padding: 0 4rem;
@@ -21,8 +22,6 @@
             align-items: center;
             justify-content: center;
             transition: 0.1s ease-in-out;
-            animation: translateTxt 7s ease-in-out;
-            animation-iteration-count: linear;
             a {
                 display: flex;
                 width: 100%;
@@ -32,8 +31,10 @@
                 text-decoration: none;
                 
                 img {
-                    width: 30px;
+                    width: 20px;
                     height: auto;
+                    opacity: 1 !important;
+                    bottom: 0px;
                 }
                 p {
                     margin-bottom: 0px;
@@ -83,9 +84,11 @@
     width: 100vw;
     background-image: url('../../../assets/images/header/header.png');
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: transitionPage 1.5s ease-in-out;
     .wrapper-content {
         width: 100%;
         max-width: 134rem;
@@ -112,11 +115,14 @@
                 p {
                     margin-bottom: 50px;
                 }
-                .btn {
-                    margin-top: 0px;
-                    font-size: 1rem;
-                    width: 50%;
-
+                div {
+                    display: flex;
+                }
+                @media screen and (max-width: 900px){
+                    width: 60%;
+                }
+                @media screen and (max-width: 600px){
+                    width: 100%;
                 }
             }
             .content-socialMedia {
@@ -143,6 +149,9 @@
             }
         }
     }
+    @media screen and (max-width: 900px){
+        background-position: initial;
+    }
 }
 
 .fullPageMenu {
@@ -158,6 +167,9 @@
     align-items: center;
     transform: translateY(100%);
     z-index: 1000000;
+    -webkit-overflow-scrolling: none;
+    overflow: hidden;
+    overscroll-behavior: none;
     .nav {
         display: flex;
         height: 100%;
@@ -166,6 +178,9 @@
         align-items: center;
         font-size: 3rem;
         font-family: $title;
+        -webkit-overflow-scrolling: none;
+        overflow: hidden;
+        overscroll-behavior: none;
         ul {
             display: flex;
             justify-content: center;
@@ -190,8 +205,8 @@
                 display: flex;
                 width: auto;
                 height: 100px;
-    justify-content: space-between;
-    transition: 0.1s ease-in-out;
+                justify-content: space-between;
+                transition: 0.1s ease-in-out;
                 &:hover {
                     img {
                         display: block;

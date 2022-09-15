@@ -1,6 +1,6 @@
 /*About*/
 .about,
-.contact__banner, .products {
+.contact__banner, .products, .contact {
     padding: 70px 0;
     height: 100%;
     width: 100%;
@@ -13,12 +13,14 @@
 .about__company-content {
     width: 50%;
     margin-right: 6rem;
+    @media screen and (max-width: 900px){ 
+        width: 100%;
+        margin-right: 0;
+    }
 
     & h2 {
         font-family: $title;
         font-weight: bold;
-        font-size: 4rem;
-        line-height: 4rem;
         margin-bottom: 2rem;
     }
 }
@@ -26,17 +28,24 @@
 .about__company-img,
 .about__product-img {
     width: 50%;
+    @media screen and (max-width: 900px){
+        width: 100% !important;
+        margin-top: 4rem;
+        order: 2;
+    }
 }
 
 .about__product-content {
     width: 50%;
     margin-left: 6rem;
+    @media screen and (max-width: 900px){
+        width: 100%;
+        margin-left: 0;
+    }
 
     & h2 {
         font-family: $title;
         font-weight: bold;
-        font-size: 4rem;
-        line-height: 4rem;
         margin-bottom: 2rem;
     }
 }
@@ -47,6 +56,9 @@
 
 /*Contact banner*/
 .contact__banner {
+    @media screen and (max-width: 900px){
+        padding: 0;
+    }
     & .banner {
         height: 20rem;
         width: 100%;
@@ -72,7 +84,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
     row-gap: 4rem;
 
     h3, .product__price {

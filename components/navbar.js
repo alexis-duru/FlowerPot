@@ -1,10 +1,10 @@
 class Header extends HTMLElement {
     constructor() {
-      super();
+        super();
     }
-  
+
     connectedCallback() {
-      this.innerHTML = `
+        this.innerHTML = `
       <!-- HEADER -->
       <div id="header" class="secondary__header">
           <div id="header-wrapper">
@@ -16,7 +16,7 @@ class Header extends HTMLElement {
               </div>
               <div id="menu-wrapper">
                   <a class="menu" id="menu-toggle" onclick="menuToggle(), myFunction()">Menu</a>
-                  <img src="assets/images/header/icones/profil.png" alt="profil" class="profil">
+                  <a href="/compte.html"><img src="assets/images/header/icones/profil.png" alt="profil" class="profil"></a>
                   <img src="assets/images/header/icones/panier.png" alt="panier" class="panier">
               </div>
           </div>
@@ -26,10 +26,6 @@ class Header extends HTMLElement {
                   <ul class="li-hidden">
                       <li>
                           <a href="/" data-text="Home">Home</a>
-                          <img src="assets/images/header/leaf.png">
-                      </li>
-                      <li>
-                          <a href="/qui-sommes-nous.html" data-text="About">About</a>
                           <img src="assets/images/header/leaf.png">
                       </li>
                       <li>
@@ -43,9 +39,9 @@ class Header extends HTMLElement {
                   </ul>
               </div>
           </div>
-      </div>  
+      </div>
       `;
     }
-  }
-  
-  customElements.define('navbar-component', Header);
+}
+
+customElements.define('navbar-component', Header);
