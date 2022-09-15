@@ -965,10 +965,16 @@ html label {
   height: 100%;
   background-color: #f8f8f8;
 }
+@media screen and (max-width: 600px) {
+  .compte .compte__left {
+    width: 100%;
+  }
+}
 .compte .compte__left .compte__link {
   color: #00372E;
+  font-weight: bold;
 }
-.compte .compte__left .compte__link :hover {
+.compte .compte__left .compte__link:hover {
   color: #191919;
 }
 .compte .compte__left .compte__left__content {
@@ -977,7 +983,7 @@ html label {
   flex-direction: column;
   height: calc(100% - 84px);
   justify-content: center;
-  width: fit-content;
+  width: 100%;
 }
 .compte .compte__left .compte__left__content .compte__label {
   display: flex;
@@ -995,12 +1001,15 @@ html label {
   height: 4rem;
   padding: 1rem;
   font-size: 1.6rem;
+  width: 80%;
 }
-.compte .compte__left .compte__left__content .compte__mdp:hover {
-  color: #00372E;
-  cursor: pointer;
-  font-weight: bold;
-  width: fit-content;
+@media screen and (max-width: 600px) {
+  .compte .compte__left .compte__left__content .compte__label input {
+    width: 100%;
+  }
+}
+.compte .compte__left .compte__left__content .compte__btn-container {
+  margin-bottom: 1rem;
 }
 .compte .compte__right {
   width: 50%;
@@ -1011,6 +1020,11 @@ html label {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .compte .compte__right {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

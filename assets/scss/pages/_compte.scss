@@ -7,10 +7,14 @@
         width: 50%;
         height: 100%;
         background-color: #f8f8f8;
+        @media screen and (max-width: 600px){
+            width: 100%;
+        }
 
         .compte__link {
             color: $green;
-            :hover {
+            font-weight: bold;
+            &:hover {
                 color: $black;
             }
         }
@@ -21,7 +25,7 @@
             flex-direction: column;
             height: calc(100% - 84px);
             justify-content: center;
-            width: fit-content;
+            width: 100%;
 
             .compte__label {
                 display: flex;
@@ -41,14 +45,14 @@
                     height: 4rem;
                     padding: 1rem;
                     font-size: 1.6rem;
+                    width: 80%;
+                    @media screen and (max-width: 600px){
+                        width: 100%;
+                    }
                 }
             }
-
-            .compte__mdp:hover {
-                color: $green;
-                cursor: pointer;
-                font-weight: bold;
-                width: fit-content;
+            .compte__btn-container {
+                margin-bottom: 1rem;
             }
         }
     }
@@ -62,5 +66,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media screen and (max-width: 600px){
+            display: none;
+        }
     }
 }
