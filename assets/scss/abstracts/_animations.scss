@@ -8,3 +8,44 @@
         transform: translateY(0px);
     }
 }
+
+@keyframes fadePage {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+// OVERLAY WITH TRANSITION
+
+.overlay-page {
+    position: absolute;
+    overflow: hidden;
+    background-color: $green;
+    width: 0vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    animation: transitionPage 1.3s ease-in-out;
+}
+
+// ANIMATION OF THE OVERLAY PAGE
+
+@keyframes transitionPage {
+    0% {
+        transform: translateX(100vw);
+        width: 0%;
+    }
+    50% {
+        transform: translateX(0vw);
+        width: 50%;
+    }
+    50% {
+        transform: translateX(0vw);
+        width: 100%;
+    }
+}
+
