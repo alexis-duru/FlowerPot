@@ -20,7 +20,7 @@ html {
             }
         }
         
-        h3 {
+        h3, .newsletter .newsletter-content .text-white {
             font-size: 2.5rem;
             @media screen and (max-width: 900px){
                 font-size: 2rem; 
