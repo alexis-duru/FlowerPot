@@ -17,8 +17,8 @@ class Footer extends HTMLElement {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae distinctio modi, odit eum officia minima, atque accusamus praesentium impedit iure dolor, earum necessitatibus quasi fuga asperiores saepe? Exercitationem, rem aut. </p>
               </div>
               <div class="links">
-                <a href=""><img src="assets/images/Icon_Face_Blanc.svg" alt="Logo Facebook Blanc"></a>
-                <a href=""><img src="assets/images/Icon_Insta_Blanc.svg" alt="Logo Instagram Blanc"></a>
+                <a href="https://www.facebook.com/"><img src="assets/images/Icon_Face_Blanc.svg" alt="Logo Facebook Blanc"></a>
+                <a href="https://www.instagram.com/"><img src="assets/images/Icon_Insta_Blanc.svg" alt="Logo Instagram Blanc"></a>
               </div>
           </div>
       </div>
@@ -31,8 +31,8 @@ class Footer extends HTMLElement {
                     <li><a href="tel:+33505050505">+33 5 05 05 05 05</a> </li>
                     <li><a href="mailto:example@gmail.com">example@gmail.com</a> </li>
                     
-                </ul>
-            </li>
+                 </ul>
+             </li>
             <li>
                 <h3>LIENS RAPIDES</h3>
                 <ul>
