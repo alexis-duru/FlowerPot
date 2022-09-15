@@ -20,6 +20,12 @@
 
 // OVERLAY WITH TRANSITION
 
+.page-wrapper-transition {
+    height: auto;
+    width: 100%;
+    animation: transitionPage 1.5s ease-in-out;
+}
+
 .overlay-page {
     position: absolute;
     overflow: hidden;

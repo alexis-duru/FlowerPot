@@ -1,7 +1,19 @@
-#products-page {
-    height: auto;
-    width: 100%;
-    animation: transitionPage 1.5s ease-in-out;
+// #products-page {
+//     height: auto;
+//     width: 100%;
+//     animation: transitionPage 1.5s ease-in-out;
+// }
+
+.card-wrapper {
+    overflow: hidden;
+    cursor: pointer;
+    img {
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
 
 .page__banner {
