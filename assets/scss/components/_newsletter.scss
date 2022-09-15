@@ -1,57 +1,79 @@
-.newsletter{
-     background-color: #013A2E;
+.newsletter {
+    background-color: #013A2E;
+
     .newsletter-content {
-    display: flex;  
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    min-height: 180px;
-    .text-white{
-        font-size: 30px;
-        .text-black{
-            color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 180px;
+        @media screen and (max-width: 900px){
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text-white {
+            font-size: 3rem;
+            line-height: 3rem;
+
+            .text-black {
+                color: black;
+            }
+        }
+
+        .newsletter-left {
+            p, span{
+                font-family: $title;
+            }
         }
     }
-    
-    }
-    .third-btn {
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    color: $black;
-    font-weight: bold;
-    --bs-btn-padding-x: 4rem;
-    --bs-btn-padding-y: .6rem;
-    margin-top: 2rem;
-    p{
-        font-family: $text !important;
-        margin-top: 8px;
-    }
-    img{
-        width: 15px;
-    }
-}
-small{
-    color: #fff;
-    font-family: $text ;
-    font-size: 10px;
 
-}
+    .third-btn {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: $black;
+        font-weight: bold;
+        --bs-btn-padding-x: 4rem;
+        --bs-btn-padding-y: .6rem;
+        margin-top: 2rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        p {
+            font-family: $title  !important;
+            margin-top: 8px;
+        }
+
+        img {
+            width: 15px;
+        }
+    }
+
+    small {
+        color: #fff;
+        font-family: $text ;
+        font-size: 10px;
+
+    }
 }
 
 #mc_embed_signup {
-    background:#fff; 
-    clear:left; 
-    font:14px Helvetica,Arial,sans-serif;  
-    width:600px;
-}
-#mc_embed_signup{
-
-    width: 100% ;
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 600px;
 }
 
-.mc-field-group{
+#mc_embed_signup {
+
+    width: 100%;
+}
+
+.mc-field-group {
     font-family: $text;
 }
