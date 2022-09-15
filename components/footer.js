@@ -17,8 +17,8 @@ class Footer extends HTMLElement {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae distinctio modi, odit eum officia minima, atque accusamus praesentium impedit iure dolor, earum necessitatibus quasi fuga asperiores saepe? Exercitationem, rem aut. </p>
               </div>
               <div class="links">
-                  <a href=""><img src="assets/images/Icon_Face_Blanc.svg" alt="Logo Facebook Blanc"></a>
-                  <a href=""><img src="assets/images/Icon_Insta_Blanc.svg" alt="Logo Instagram Blanc"></a>
+                <a href=""><img src="assets/images/Icon_Face_Blanc.svg" alt="Logo Facebook Blanc"></a>
+                <a href=""><img src="assets/images/Icon_Insta_Blanc.svg" alt="Logo Instagram Blanc"></a>
               </div>
           </div>
       </div>
@@ -28,25 +28,25 @@ class Footer extends HTMLElement {
               <li>
                   <h3>BESOIN D'AIDE ?</h3>
                   <ul>
-                      <li> +33 5 05 05</li>
-                      <li> example@gmail.com</li>
-                      <li> Contact</li>
-                  </ul>
-              </li>
-              <li>
-                  <h3>LIENS RAPIDES</h3>
-                  <ul>
-                      <li><a href="">Accueil</a> </li>
-                      <li><a href="">Qui sommes nous ?</a></li>
-                      <li><a href="">Nos produits</a></li>
-                  </ul>
-              </li>
-              <li>
-                  <h3>LIENS UTILES</h3>
-                  <ul>
-                      <li><a href="">Mentions légales</a> </li>
-                      <li><a href="">Politique de confidentialité</a></li>
-                  </ul>
+                    <li><a href="tel:+33505050505">+33 5 05 05 05 05</a> </li>
+                    <li><a href="mailto:example@gmail.com>example@gmail.com</a> </li>
+                    
+                </ul>
+            </li>
+            <li>
+                <h3>LIENS RAPIDES</h3>
+                <ul>
+                    <li><a href="/">Accueil</a> </li>
+                    <li><a href="/nos-produits.html">Nos produits</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>LIENS UTILES</h3>
+                <ul>
+                    <li><a href="/mentions-legales.html">Mentions légales</a> </li>
+                    <li><a href="/politique-de-confidentialite.html">Politique de confidentialité</a></li>
+                </ul>
               </li>
           </ul>
       </div>
