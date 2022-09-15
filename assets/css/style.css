@@ -1331,5 +1331,92 @@ html label {
     flex-direction: column;
   }
 }
+.single-product-wrapper {
+  height: 80vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+.single-product-wrapper .container-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single-product-wrapper .container-left .card-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.single-product-wrapper .container-left .card-wrapper img {
+  width: 70%;
+  height: auto;
+}
+@keyframes fadeImgSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.single-product-wrapper .container-right {
+  width: 50%;
+  height: 100%;
+}
+.single-product-wrapper .container-right .card-wrapper-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.single-product-wrapper .container-right .card-wrapper-info div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.single-product-wrapper .container-right .card-wrapper-info div h3 {
+  transform: translateX(0px);
+  font-size: 4rem;
+  animation: translate-txt 2s ease-in-out;
+}
+.single-product-wrapper .container-right .card-wrapper-info div span {
+  animation: translate-txt 2.5s ease-in-out;
+}
+.single-product-wrapper .container-right .card-wrapper-info div .price {
+  font-size: 2.5rem;
+  animation: translate-txt 2.7s ease-in-out;
+}
+.single-product-wrapper .container-right .card-wrapper-info div .description {
+  width: 70%;
+  text-align: justify;
+  animation: translate-txt 3s ease-in-out;
+}
+.single-product-wrapper .container-right .card-wrapper-info H3, .single-product-wrapper .container-right .card-wrapper-info span, .single-product-wrapper .container-right .card-wrapper-info p, .single-product-wrapper .container-right .card-wrapper-info a {
+  margin-bottom: 10px;
+}
+.single-product-wrapper .container-right .card-wrapper-info a {
+  margin-top: 50px;
+}
+
+@keyframes translate-txt {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
