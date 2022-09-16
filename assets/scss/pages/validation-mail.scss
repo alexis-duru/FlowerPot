@@ -1,0 +1,26 @@
+.validation-mail{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .wrapper-column{
+        align-items: center;
+    }
+}
+.mail-confirm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    flex-direction: column;
+
+    div {
+        margin-top: 2rem;
+    }
+
+    .primary-btn{
+        padding: .6rem 1.75rem !important;
+    }
+}

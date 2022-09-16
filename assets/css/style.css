@@ -1509,4 +1509,30 @@ canvas {
   max-height: 100vh;
 }
 
+.validation-mail {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.validation-mail .wrapper-column {
+  align-items: center;
+}
+
+.mail-confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  flex-direction: column;
+}
+.mail-confirm div {
+  margin-top: 2rem;
+}
+.mail-confirm .primary-btn {
+  padding: 0.6rem 1.75rem !important;
+}
+
 /*# sourceMappingURL=style.css.map */
