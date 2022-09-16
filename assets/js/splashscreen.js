@@ -1,8 +1,20 @@
-let intro = document.querySelector('.intro');
-let logo = document.querySelector('.logo-header');
-let logoSpan = document.querySelectorAll('.logo');
+const firstVisit = localStorage.getItem('firstVisit');
+const splashscreen = document.querySelector('.intro');
+
+if(firstVisit === null) {
+    localStorage.setItem('firstVisit', 'true');
+    splashscreen.classList.remove('mask');
+} else {
+    localStorage.setItem('firstVisit', 'false');
+    splashscreen.classList.add('mask');
+}
+
 
 window.addEventListener('DOMContentLoaded', () => {
+
+    let intro = document.querySelector('.intro');
+    let logoSpan = document.querySelectorAll('.logo');
+
     setTimeout(() => {
 
         logoSpan.forEach((span, idx) =>{
@@ -26,6 +38,5 @@ window.addEventListener('DOMContentLoaded', () => {
         setTimeout(() =>{
             intro.style.top = '-100vh';
         },2300)
-
     })
 },)
