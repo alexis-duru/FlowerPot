@@ -40,7 +40,7 @@ class Newsletter extends HTMLElement {
                           <!-- Begin Mailchimp Signup Form -->
       
                   <div id="mc_embed_signup">
-                      <form action="https://gmail.us17.list-manage.com/subscribe/post?u=d37bc1023c71abfb267aed26f&amp;id=cfc3a54052&amp;f_id=001352e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                      <form action="https://gmail.us18.list-manage.com/subscribe/post?u=bbd4474a32199033edcbc7877&amp;id=420c9f2dda&amp;f_id=00411ae7f0"  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                           <div id="mc_embed_signup_scroll">
                           <h2>Subscribe</h2>
                           <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
