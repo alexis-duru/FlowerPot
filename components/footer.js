@@ -9,7 +9,7 @@ class Footer extends HTMLElement {
       <div class="user_footer">
       <div class="reseaux">
           <div class="wrapper-reseaux">
-              <div class = "logo">
+              <div class = "logo__footer">
                   <img src="assets/images/Logo_blanc.svg" alt="Logo Marque Blanc">
                   <h2>FlowerPot</h2>
               </div>
