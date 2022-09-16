@@ -42,10 +42,10 @@ class Newsletter extends HTMLElement {
                   <div id="mc_embed_signup">
                       <form action="https://gmail.us18.list-manage.com/subscribe/post?u=bbd4474a32199033edcbc7877&amp;id=420c9f2dda&amp;f_id=00411ae7f0"  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                           <div id="mc_embed_signup_scroll">
-                          <h2>Subscribe</h2>
-                          <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                          <h2>S'abonner</h2>
+                          <div class="indicates-required"><span class="asterisk">*</span> champs requis</div>
                   <div class="mc-field-group">
-                      <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                      <label for="mce-EMAIL">Adresse mail <span class="asterisk">*</span>
                   </label>
                       <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
                       <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
@@ -57,7 +57,7 @@ class Newsletter extends HTMLElement {
                       <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d37bc1023c71abfb267aed26f_cfc3a54052" tabindex="-1" value=""></div>
                           <div class="optionalParent">
                               <div class="clear foot">
-                                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn primary-btn">
+                                  <input type="submit" value="Je m'abonne" name="subscribe" id="mc-embedded-subscribe" class="btn primary-btn">
                                   <p class="brandingLogo"><a href="http://eepurl.com/h-5M0P" title="Mailchimp - email marketing made easy and fun"></a></p>
                               </div>
                           </div>
@@ -68,8 +68,8 @@ class Newsletter extends HTMLElement {
                   <!--End mc_embed_signup-->
               </div>
               <div class="modal-footer">
-              <button type="button" class="btn third-btn" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn primary-btn">Save changes</button>
+              <button type="button" class="btn third-btn" data-bs-dismiss="modal">Fermer</button>
+              <button type="button" class="btn primary-btn">Sauvegarder</button>
               </div>
           </div>
           </div>
