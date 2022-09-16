@@ -27,8 +27,7 @@
 }
 
 .overlay-page {
-    position: absolute;
-    overflow: hidden;
+    position: fixed;
     background-color: $green;
     width: 0vw;
     height: 100vh;
@@ -36,6 +35,7 @@
     left: 0;
     z-index: 9999999999;
     animation: transitionPage 1.3s ease-in-out;
+    overflow-y: hidden;
 }
 
 // ANIMATION OF THE OVERLAY PAGE

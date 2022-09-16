@@ -23,8 +23,10 @@ closeBtn.addEventListener('click', function () {
     // document.documentElement.style.overflowX = 'none';
     console.log("toto")
 })
+
 openBtn.addEventListener('click', function () {
     console.log("toto")
 })
+
 
 
