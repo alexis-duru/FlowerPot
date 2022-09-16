@@ -1,12 +1,16 @@
 .newsletter {
     background-color: #013A2E;
+    height: 30vh;
+    .wrapper-row {
+        height: 100%;
+    }
 
     .newsletter-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        min-height: 180px;
+        height: 100%;
         @media screen and (max-width: 900px){
             flex-direction: column;
             justify-content: center;
@@ -28,6 +32,10 @@
         }
     }
 
+    #newsletter-infos {
+        margin-top: 10px;
+    }
+
     .third-btn {
         display: flex;
         justify-content: center;
@@ -38,7 +46,7 @@
         font-weight: bold;
         --bs-btn-padding-x: 4rem;
         --bs-btn-padding-y: .6rem;
-        margin-top: 2rem;
+        margin-top: 0rem !important;
 
         &:hover{
             cursor: pointer;

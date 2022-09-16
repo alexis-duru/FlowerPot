@@ -18,7 +18,7 @@ class Newsletter extends HTMLElement {
                               <!-- Button trigger modal -->
                       <div class="third-btn"  data-bs-toggle="modal" data-bs-target="#exampleModal"><p>Je M'inscris <span class="text-green">*</span> <img src="assets/images/newsletterlogo.webp" alt="newsletterlogo"></p></div>
       
-                      <div><small>*Vous acceptez que vos coordonnées soient utilisées pour vous contacter.</small></div>
+                      <div id="newsletter-infos"><small>*Vous acceptez que vos coordonnées soient utilisées pour vous contacter.</small></div>
                       
                   
                   </div>
