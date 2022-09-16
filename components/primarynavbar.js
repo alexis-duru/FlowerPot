@@ -10,14 +10,14 @@ class Header extends HTMLElement {
           <div id="header-wrapper">
               <div id="logo-wrapper">
                   <a href="index.html">
-                      <img src="assets/images/header/Logo.png" alt="logo" class="logo">
+                      <img src="assets/images/header/Logo.webp" alt="logo" class="logo">
                       <p>FlowerPot</p>
                   </a>
               </div>
               <div id="menu-wrapper">
                   <a class="menu" id="menu-toggle" onclick="menuToggle(), myFunction()">Menu</a>
-                  <a href="/compte.html"><img src="assets/images/header/icones/profil.png" alt="profil" class="profil"></a>
-                  <a href="/404.html"><img src="assets/images/header/icones/panier.png" alt="panier" class="panier"></a>
+                  <a href="/compte.html"><img src="assets/images/header/icones/profil.webp" alt="profil" class="profil"></a>
+                  <a href="/404.html"><img src="assets/images/header/icones/panier.webp" alt="panier" class="panier"></a>
               </div>
           </div>
           <!-- NAVIGATION  -->
@@ -26,21 +26,18 @@ class Header extends HTMLElement {
                   <ul class="li-hidden">
                   <li>
                   <a href="/" data-text="Home">Home</a>
-                  <img src="assets/images/header/leaf.png">
+                  <img src="assets/images/header/leaf.webp">
               </li>
               <li>
               <a href="/nos-produits.html" data-text="Products">Products</a>
-              <img src="assets/images/header/leaf.png">
+              <img src="assets/images/header/leaf.webp">
           </li>
               <li>
                   <a href="/contact.html" data-text="Contact">Contact</a>
-                  <img src="assets/images/header/leaf.png">
+                  <img src="assets/images/header/leaf.webp">
               </li>
                   </ul>
               </div>
-              <!-- <div class="img-wrapper">
-                  <img src="assets/images/header/plant-header.jpg">
-              </div> -->
           </div>
       </div>
       `;
