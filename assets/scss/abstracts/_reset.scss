@@ -6,9 +6,6 @@
     box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
 
 body,
 html {
@@ -19,6 +16,19 @@ html {
     overscroll-behavior: none;
     margin: 0;
 }
+
+::-webkit-scrollbar {
+//    display: none;
+    background-color: #00372E;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    //    display: none;
+        background-color: white;
+        height: auto;
+    }
+    
 
 *,
 :after,
