@@ -725,18 +725,18 @@ html label {
     width: 100%;
   }
 }
-.footer .user_footer .reseaux .logo {
+.footer .user_footer .reseaux .logo__footer {
   width: auto;
   height: auto;
   opacity: 1;
   display: flex;
   align-items: center;
-  margin-bottom: 3rem;
+  margin: 2rem 0;
 }
-.footer .user_footer .reseaux .logo h2 {
+.footer .user_footer .reseaux .logo__footer h2 {
   font-size: 2rem;
 }
-.footer .user_footer .reseaux .logo img {
+.footer .user_footer .reseaux .logo__footer img {
   color: white;
   width: 25px;
   margin-right: 10px;
