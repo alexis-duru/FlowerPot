@@ -437,7 +437,7 @@ html label {
 .first-section {
   height: 100vh;
   width: 100vw;
-  background-image: url("../../../assets/images/header/header.png");
+  background-image: url("../../../assets/images/header/header.webp");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1118,7 +1118,7 @@ html label {
 .page__banner {
   height: 160px;
   padding: 4rem;
-  background-image: url(../../../assets/images/header/header.png);
+  background-image: url(../../../assets/images/header/header.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1217,7 +1217,7 @@ html label {
 .compte .compte__right {
   width: 50%;
   height: 100%;
-  background-image: url("../../../assets/images/header/header.png");
+  background-image: url("../../../assets/images/header/header.webp");
   background-size: cover;
   background-position: right;
   display: flex;
