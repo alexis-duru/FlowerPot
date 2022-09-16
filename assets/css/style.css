@@ -1479,5 +1479,12 @@ html label {
     transform: translateX(0);
   }
 }
+canvas {
+  display: block;
+  margin: auto;
+  object-fit: contain;
+  max-width: 100vw;
+  max-height: 100vh;
+}
 
 /*# sourceMappingURL=style.css.map */
